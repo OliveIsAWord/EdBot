@@ -1,0 +1,12 @@
+[package]
+name = "edbot"
+version = "0.0.1"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.17.0", features = ["macros", "rt-multi-thread"] }
+serenity = { version = "0.10.10", default-features = false, features = ["client", "gateway", "rustls_backend", "model"] }
+#openssl = {path = "rust-openssl-master"}
+#discord = { git = "https://github.com/SpaceManiac/discord-rs" }
