@@ -66,15 +66,7 @@ impl EventHandler for EdBotHandler {
             // authentication error, or lack of permissions to post in the
             // channel, so log to stdout when some error happens, with a
             // description of it.
-            // if let Err(why) = msg.channel_id.say(&ctx.http, "Pong!").await {
-            //     eprintln!("Error sending message: {:?}", why);
-            // }
-            //let uwu = format_full_username(&msg.author);
-            let mut uwu = String::from("bitch");
-            for ping in &msg.mentions {
-                uwu = format_full_username(ping);
-            }
-            if let Err(why) = msg.channel_id.say(&ctx.http, uwu).await {
+            if let Err(why) = msg.channel_id.say(&ctx.http, "bitch").await {
                 eprintln!("Error sending message: {:?}", why);
             }
         }
