@@ -1,4 +1,4 @@
-# EdBot 0.0.1
+# EdBot 0.1.0
 The backend for the EdCord server bot, written in Rust using the Serenity and Tokio libraries. New behaviors can be implemented with Traits.
 
 ## Behavior Traits
